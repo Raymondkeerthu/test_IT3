@@ -1,0 +1,179 @@
+#grid { 
+      display: grid;
+      grid-template-columns:1fr; /* twee kolommen */ 
+      grid-template-rows: 150px 150px 150px; /* drie rijen */ 
+      width: 100%;
+      margin: 0px auto;
+}
+
+img{
+      width:100%;
+}
+#gebied1 { 
+      grid-column-start: 1;
+      grid-row-start: 1; 
+      padding: 15px;
+} 
+
+
+#gebied3 { 
+      grid-column: 1; 
+      grid-row: 2; 
+      /*align-self: start/center/end;*/ 
+      background-color: blue;
+      padding: 15px;
+} 
+
+#gebied4 { 
+      margin:10% auto;
+      width:80%;
+      grid-column: 2; 
+      grid-row-start: 1;
+      grid-row-end: 3;
+} 
+
+
+
+#gebied6 {
+      
+}
+#gebied7 {
+      background-color: tomato;  
+      padding: 15px;
+}
+#gebied8 {
+ 
+      padding: 15px;
+      margin:auto 20px;
+     
+      
+}
+
+h1{
+      font-family:bebas;
+      font-size:2em;
+      
+}
+
+p{
+     margin-top:20px; 
+}
+
+
+
+#gebied5 { 
+      grid-column:1; 
+      grid-row: 1; 
+      background-color: green;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px
+}
+
+.marketing-site-hero {
+  background: url("https://wallpaperbrowse.com/media/images/1440707422_vintage-tumblr-wallpapers.jpg") top right no-repeat;
+  height: 205vh;
+  background-size: cover;
+  display: flex;
+  display: flexbox;
+  align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+.Layer_2 {
+  z-index: 300;
+}
+
+path, line, circle, polygon, ellipse, rect{
+
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: offset 6s infinite linear backwards;
+  stroke:#ffff;
+}
+
+
+
+@keyframes offset {
+    from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 200px) {
+
+  #gebied4 {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+  }
+
+  #gebied5 {
+    grid-column:1;
+          grid-row: 1;
+          padding: 15px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 10px
+    }
+
+}
+
+
+
+@media (min-width: 800px) {
+
+  #gebied4 {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+  }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+  #gebied4 {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+  }
+
+#gebied5 { 
+      grid-column:1; 
+      grid-row: 1; 
+      background-color: green;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px
+}
+
+
+}
